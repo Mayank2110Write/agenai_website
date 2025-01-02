@@ -33,7 +33,10 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
+a {
+	text-decoration: none;
+  }
+  
 ol, ul {
 	list-style: none;
 }
@@ -197,9 +200,12 @@ input, select, textarea {
 		}
 
 	h1 {
+		font-family: "Poppins";
+		color: #ffffff;
 		font-size: 4rem;
 		line-height: 1.1;
 		margin: 0 0 2rem 0;
+		/* text-transform: lowercase; */
 	}
 
 	h2 {
@@ -299,14 +305,14 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #18bfef !important;
+			color: black !important;
 		}
 
 	strong, b {
 		color: #212931;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h2, h3, h4, h5, h6 {
 		color: #212931;
 	}
 
@@ -2216,8 +2222,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #18bfef;
-			color: #18bfef !important;
+			box-shadow: inset 0 0 0 2px black;
+			color: black !important;
 		}
 
 		input[type="submit"].primary,
@@ -3234,8 +3240,9 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			/* background-color: #212931; */
+			background: radial-gradient(circle, #ff99007e, black);
+			/* background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg"); */
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3332,7 +3339,7 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
-		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
+		#intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
 			color: #ffffff;
 		}
 
@@ -3557,7 +3564,6 @@ input, select, textarea {
 		#header hr {
 			border-bottom-color: #ffffff;
 		}
-
 		#header .logo {
 			-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
 			-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
@@ -3570,7 +3576,7 @@ input, select, textarea {
 			font-family: 'Poppins',Arial, Helvetica, sans-serif;
 			font-size: 2.25rem;
 			font-weight: 900;
-			letter-spacing: 0.075em;
+			/* letter-spacing: 0.075em; */
 			line-height: 1;
 			padding: 1rem 1.75rem;
 			/* text-transform: lowercase;*/
@@ -3578,14 +3584,16 @@ input, select, textarea {
 			color: #ffffff;
 			visibility: visible;
 			border-radius: 50px;
+			text-decoration: none;
 		}
-		.dot {
+		#dot{
 			color: orange;
-		  }
+			margin-left: -10px;	
+		}
 
 			#header .logo:hover {
-				border-color: #18bfef !important;
-				color: #18bfef !important;
+				border-color : yellowgreen !important;
+				color: orange !important;
 			}
 
 		@media screen and (max-width: 980px) {
